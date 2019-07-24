@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link href="testcode.css" rel="stylesheet" type="text/css">
+</head> 
+<body>
+    <div id="sakura">
+        <div id="banner">
+            <div id="menu">
+                <ul>
+                    <li> 
+                        <a href=""> Home </a>
+                    </li> 
+                    <li class="has-children"> 
+                        <a href=""> Services </a>
+                        <ul class="dropdown">
+                            <li> 
+                                <a href=""> Facility Management </a>
+                            </li>
+                            <li> 
+                                <a href=""> Healthcare Facilities </a>
+                            </li>
+                            <li> 
+                                <a href=""> Department Store </a>
+                            </li>
+                            <li> 
+                                <a href=""> Office Building </a>
+                            </li> 
+                            <li> 
+                                <a href=""> Hotel </a>
+                            </li>   
+                            <li> 
+                                <a href=""> Factory </a>
+                            </li>   
+                        </ul>
+                    </li>
+                    <li class="has-children"> 
+                        <a href=""> Customer </a>
+                        <ul class="dropdown">
+                            <li> 
+                                <a href=""> Janpanese Company </a>
+                            </li>
+                            <li> 
+                                <a href=""> Vietnam Company </a>
+                            </li> 
+                        </ul>
+                    </li>
+                    <li> 
+                        <a href=""> Contact </a>
+                    </li>   
+                </ul>
+            </div>    
+        </div>
+        <div id="slideshow">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="http://www.sakuraecology.com/images/slide2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="http://www.sakuraecology.com/images/slide2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="http://www.sakuraecology.com/images/slide2.jpg" style="width:100%">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+            }
+            </script>               
+        </div>
+        <div id="about company">
+            <h3>About Sakura Company</h3>
+            <p>Established in Ho Chi Minh City in December, 2007 with Our Parent Company is Kofu building service Ltd. that put the base on Yamanashi Prefecture Kofu City in Japan .</p>
+            <p>Kofu building service Ltd. has over 50 years experience in the field of integrated building management with over 200 customers around Kofu city such as Tokyo, Yokohama, Nagano, Shizuoka …. </p>
+            <p>With the motto is whole - hearted - enthusiasm, we will give you a safe space and comfort.</p>
+            <p>Progress to Vietnam with the aim of beginning and gradual development of building maintenance in this growing market , and will provide services with high quality and This Vietnam advancement was large and the [birumen] industry of Japan was made to be started in a developing Vietnamese market, and a Vietnamese enterprise and the advancement Japan enterprise wanted to help you and landed providing with high service of a super-modern quality.</p>
+            <p>We wish to take advantage of the know-how and experience accumulated in Japan to contribute to the development of the building maintenance sector in Vietnam . </p>
+            <p>Thank you so kindly for your support and encouragement</p>
+        </div>    
+    </div>      
+</body> 
+</html>

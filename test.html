@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="test.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>  
+<body>
+    <div id="sakura">
+        <div id="banner">
+            <div id="menu">
+                <ul>
+                    <li> 
+                        <a href=""> Home </a>
+                    </li>
+                    <li class="menu-has-children"> 
+                        <a href="" class="sf-with-ul"><span class="dichvu"></span> Service </a>
+                        <ul class="dropdown">
+                            <li> 
+                                <a href=""> Office Building </a>
+                            </li> 
+                            <li> 
+                                <a href=""> Facility management </a>
+                            </li>
+                            <li> 
+                                <a href=""> Healthcare Facilities </a>
+                            </li>
+                            <li> 
+                                <a href=""> Hotel </a>
+                            </li>   
+                            <li> 
+                                <a href=""> Factory </a>
+                            </li> 
+                            <li> 
+                                <a href=""> Supermarket - Department store </a>
+                            </li> 
+                        </ul>
+                    </li>
+                    <li> 
+                        <a href=""> Customer </a>
+                        <ul class="dropdown1">
+                            <li> 
+                                <a href=""> Vietnam Company </a>
+                            </li> 
+                            <li> 
+                                <a href=""> Janpanese Company </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li> 
+                        <a href=""> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="slideshow">
+            <div class="w3-content w3-display-container">
+                <img class="mySlides" src="http://www.sakuraecology.com/images/slide2.jpg" style="width:100%">
+                <img class="mySlides" src="http://www.sakuraecology.com/images/banner.jpg" style="width:100%">
+                <img class="mySlides" src="http://www.sakuraecology.com/images/slide1.jpg" style="width:100%">
+                <img class="mySlides" src="http://www.sakuraecology.com/images/slide2.jpg" style="width:100%">
+              
+                <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+              
+            <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+              
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
+              
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+              }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
